@@ -1,0 +1,31 @@
+.my-class1 {
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+
+
+.my-class2 {
+    text-align: center;
+    background-color:rgb(255, 235, 145);
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 4px solid rgb(0, 0, 0);
+    background-color:rgb(255, 235, 145);
+}  
+
+.flex-child:first-child {
+    margin-right: 25px;
+    background-color:rgb(255, 235, 145);
+} 
+
+.background {
+    background-color: rgba(255, 208, 0, 0.342);
+}
