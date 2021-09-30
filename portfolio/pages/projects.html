@@ -1,27 +1,40 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <strong><title>Projects</title></strong>
+    <style>
+        body {
+        font-family: "Montserrat";
+        background-color: rgba(253, 246, 184, 0.781);
+        }
+        .dark-mode {
+        background-color: black;
+        color: white;
+        }
+    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <title>Projects</title>
 </head> 
 <body>
     <header>
         <main>
-        <h1>Welcome to my projects!</h1>
+            <strong><h1>Welcome to my projects!</h1></strong>
     </header>
-    <br />
+    <br>
 <section>
 <main>
     <thead>
         <h2>Projects</h2>
-        <br />
+        <br><br>
     </thead>
     <tbody>
-    <table>
+    <table style="border: 4px solid:black">
         <tr>
             <th>Name</th>
             <th>Image</th>
             <th>Description</th>
-
         </tr>
         <tr>
             <td>CLI-Mystery</td>
@@ -35,7 +48,7 @@
             <td><img src="../images/hellothere.jpg" alt="Photo of Dave"
                 width="100" 
                 height="100"></td>
-            <td>About Me project created using HTML</td>
+            <td>'About Me' project created using HTML</td>
         </tr>
         <tr>
             <td>Student Roster</td>
@@ -48,6 +61,14 @@
 
     </table>
     </tbody>
+    <br>
+    <button onclick="myFunction()">Dark Mode</button>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 </main>
 </section>
 </body>
