@@ -18,8 +18,8 @@
         <img src="./images/hellothere.jpg" alt="Dave Taylor Photo"
         width="200" 
         height="200">
-            <br />
-            <br />
+            <br>
+            <br>
         <strong><h2>Dave's path to Daveloper</h2></strong>
         <nav>
             <br>
@@ -30,7 +30,14 @@
             <a href="https://github.com/Daveoxys" target="_blank">Github Profile</a> 
             <br><br>
             <a href="https://www.linkedin.com/in/david-taylor-b7b6b3b6" target="_blank">LinkedIn Profile</a>
-            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br>
+            <button onclick="myFunction()">Dark Mode</button>
+            <script>
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+                </script><br>
             <a href="https://www.manchestercodes.com/" target="_blank">
             <img src="./images/mcr codes.png" alt="MCR Codes Logo"
             width=220
@@ -129,7 +136,61 @@
             </div>
           <br />
     </section>
+    <br><br><br><br>
+  <section>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item">Welcome to my Projects!</div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item">CLI-Mystery</div>
+        <div class="grid-item"><img src="./images/climurders.png" alt="Photo of Dave" width="100" height="100"></div>
+        <div class="grid-item">Solved the CLI murders using Terminal</div>
+        <div class="grid-item">HTML Project</div>
+        <div class="grid-item"><img src="./images/hellothere.jpg" alt="Photo of Dave" width="100"  height="100"></div>
+        <div class="grid-item">'About Me' project created using HTML</div>
+        <div class="grid-item">Student Roster</div>
+        <div class="grid-item"><img src="./images/studentroster.png" alt="Student Roster" width="100"  height="100"></div>
+        <div class="grid-item">Updated the student roster on Github</div>
+    </div>
+</section>
+<br><br><br><br>
+<div class="contactMe">
+<fieldset>
+    <legend><br>Your Details: </legend>
+    <label><br>
+        Name:
+        <input type="text" value="name" />
+    </label>
+    <label>
+        Email:
+        <input type="email" value="email address" />
+        <br>
+    </label>
+    </label>
+</fieldset>
+<br><br><br>
+<fieldset>
+    <legend>Reason for contacting</legend>
+    <input type="checkbox" name="reason for contacting" value="Personal" /> Personal
+    <br />
+    <input type="checkbox" name="reason for contacting" value="Professional" /> Professional
+    <br />
+    <input type="checkbox" name="reason for contacting" value="Like the cut of my jib" /> Like the cut of my jib
+    <br />
+    <input type="checkbox" name="reason for contacting" value="Spam" /> To fill my inbox with spam
+    <br /><br />
+    <label for="comments">Other reason:</label>
+    <textarea id="comments" placeholder="reason for contacting"></textarea>
     <br><br><br>
+    <form method="post" action="mailto:youremail@youremail.com" >
+    <input type="submit" value="Send Email" />
+    </form>
+</fieldset>
+</div>
+<br><br><br><br>
     <hr color="black">
      <footer>
         2021 - Dave Taylor ©

@@ -9,6 +9,10 @@
   background-color: rgba(253, 246, 184, 0.781);
   }
 
+  .dark-mode {
+    background-color: black;
+    color: white;
+    }
 
 
 .my-class1 {
@@ -19,19 +23,19 @@
 
 
 .my-class2 {
-    
     background-color:rgb(255, 235, 145);
     color: rgb(0, 0, 0);
     font-size: 1.1rem;
     border: 4px solid rgb(0, 0, 0);
     text-align: center;
+    margin-left: 400px;
+
 }
 
 .flex-container {
     display: flex;
     align-items: center;
     width: 95%;
-   
 }
 
 .flex-child1 {
@@ -39,9 +43,10 @@
     border: 4px solid rgb(0, 0, 0);
     background-color:rgb(255, 235, 145);
     text-align: center;
-    margin-right: 40mm;
     text-transform: uppercase;
-    margin-top: -46mm;       
+    margin-top: -40mm; 
+    position:fixed;      
+    width: 250px;
 }
 
 .flex-child2 {
@@ -49,7 +54,16 @@
     border: 4px solid rgb(0, 0, 0);
     background-color:rgb(255, 235, 145);
     text-align: center;
-    margin-left: 100mm;
+    margin-left: 105mm;
+       
+}
+
+.flex-child3 {
+    flex: 1;
+    border: 4px solid rgb(0, 0, 0);
+    background-color:rgb(255, 235, 145);
+    text-align: center;
+    margin-left: 105mm;
        
 }
 
@@ -66,4 +80,26 @@ footer {
     text-align: center;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255, 235, 145);
+    padding: 10px;
+    margin-left: 105mm;
+    margin-right: 25mm;
+    border: 4px solid rgba(0, 0, 0, 0.8);
+  }
 
+  .grid-item {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contactMe {
+      
+      margin-left: 200mm;
+      margin-right: 120mm;
+      border: 4px solid black;
+      background-color: rgb(255, 235, 145);
+  }
