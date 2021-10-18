@@ -9,9 +9,12 @@
   background-color: rgba(253, 246, 184, 0.781);
   }
 
+  
   .dark-mode {
     background-color: black;
     color: white;
+    width: 98vw;
+    min-height: 100vh;
     }
 
 
@@ -97,9 +100,18 @@ footer {
   }
 
   .contactMe {
-      
       margin-left: 200mm;
       margin-right: 120mm;
       border: 4px solid black;
       background-color: rgb(255, 235, 145);
   }
+
+
+  .box {
+    height: 100px;
+}
+
+ links:hover {
+     color: rgb(0, 0, 0);
+     text-shadow: 0 2px 2px rgba(0,0,0,.2);
+ }
