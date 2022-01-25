@@ -1,11 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import { render } from "react-dom";
+import App from "./components/App";
+import "./styles/index.css";
+import "raf/polyfill";
+import location from "./data/forecast.json";
 
-ReactDOM.render(
+render(
   <React.StrictMode>
-    <App />
+    <App location={location.location} />
   </React.StrictMode>,
   document.getElementById("root")
 );
