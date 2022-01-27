@@ -8,7 +8,7 @@ const App = ({ location }) => {
   return (
     <div className="App">
       <header>
-        <h1>Weather App</h1>
+        <h1>Spaceport Weather App</h1>
       </header>
       <LocationDetails city={location.city} country={location.country} />
       <ForeCastSummaries />
