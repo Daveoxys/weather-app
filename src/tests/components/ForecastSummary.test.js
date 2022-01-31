@@ -29,5 +29,6 @@ describe("ForecastSummary", () => {
     );
     expect(getByTestId("forecast-icon")).toHaveClass("forecast-summary__icon");
     expect(getByText("22°C")).toHaveClass("forecast-summary__temperature");
+    expect(render).toMatchSnapshot();
   });
 });

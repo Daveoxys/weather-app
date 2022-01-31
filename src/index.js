@@ -1,13 +1,16 @@
 import React from "react";
-import { render } from "react-dom";
+import ReactDOM from "react-dom";
 import App from "./components/App";
 import "./styles/index.css";
 import "raf/polyfill";
-import location from "./data/forecast.json";
+// import { location, forecasts } from "./data/forecast.json";
+import packageInfo from "./data/forecast.json";
 
-render(
+const { forecasts, location } = packageInfo;
+
+ReactDOM.render(
   <React.StrictMode>
-    <App location={location.location} />
+    <App forecasts={forecasts} location={location} />
   </React.StrictMode>,
   document.getElementById("root")
 );

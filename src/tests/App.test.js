@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "../components/App";
 
-xtest("renders Weather App title", () => {
+xit("renders Weather App title", () => {
   render(
     <App
       LocationDetails={{
