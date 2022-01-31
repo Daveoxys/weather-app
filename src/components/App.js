@@ -1,11 +1,11 @@
-import "../styles/App.css";
 import React from "react";
 import PropTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 import ForeCastSummaries from "./ForecastSummaries";
+import "../styles/App.css";
 
 const App = ({ location, forecasts }) => (
-  <div className="Weather App">
+  <div className="weather-app">
     <header>
       <h1>Weather App</h1>
     </header>
