@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   >
     <header>
       <h1>
-        Its always cloudy in 
+        Its always cloudy in .
       </h1>
     </header>
     <br />
@@ -16,11 +16,24 @@ exports[`renders correctly 1`] = `
     >
       , 
     </h2>
+    <br />
+    <div
+      class="search-form"
+    >
+      <input
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
     <div
       class="forecast-summaries"
       div-testid="forecast-summaries"
     />
-    <br />
   </div>
 </DocumentFragment>
 `;
