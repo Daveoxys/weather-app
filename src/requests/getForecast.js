@@ -23,13 +23,11 @@ const getForecast = (
       const { status } = error.response;
       if (status === 404) {
         setErrorMessage(
-          "If that was a real place, you would be looking at the forecast right now. Take a brolly anyway just in case"
+          "If that was a real place, you would be looking at the forecast right now. Take a brolly anyway just in case."
         );
-        console.error("Location is not valid", error);
       }
       if (status === 500) {
         setErrorMessage("Oops, server error, try again later.");
-        console.error("Server error", error);
       }
     });
 };

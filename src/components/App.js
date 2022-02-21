@@ -49,7 +49,7 @@ const App = () => {
         country={location.country}
         errorMessage={errorMessage}
       />
-      <br />
+
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}
@@ -67,37 +67,5 @@ const App = () => {
     </div>
   );
 };
-
-// App.propTypes = {
-//  forecasts: PropTypes.arrayOf(
-//    PropTypes.shape({
-//      date: PropTypes.number.isRequired,
-//      description: PropTypes.string.isRequired,
-//      icon: PropTypes.string.isRequired,
-//      temperature: PropTypes.shape({
-//        min: PropTypes.number,
-//        max: PropTypes.number,
-//      }),
-//    })
-//  ).isRequired,
-//  location: PropTypes.shape({
-//    city: PropTypes.string,
-//    country: PropTypes.string,
-//  }).isRequired,
-//  forecast: PropTypes.shape({
-//    date: PropTypes.number.isRequired,
-//    description: PropTypes.string.isRequired,
-//    icon: PropTypes.string.isRequired,
-//    temperature: PropTypes.shape({
-//      min: PropTypes.number,
-//      max: PropTypes.number,
-//    }),
-//    humidity: PropTypes.number,
-//    wind: PropTypes.shape({
-//      speed: PropTypes.number,
-//      direction: PropTypes.string,
-//    }),
-//  }).isRequired,
-// };
 
 export default App;
